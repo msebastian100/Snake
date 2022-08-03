@@ -193,16 +193,16 @@ while True:
 		if event.type == SCREEN_UPDATE:
 			main_game.update()
 		if event.type == pygame.KEYDOWN:
-			if event.key == pygame.K_UP:
+			if event.key == pygame.K_w:
 				if main_game.snake.direction.y != 1:
 					main_game.snake.direction = Vector2(0,-1)
-			if event.key == pygame.K_RIGHT:
+			if event.key == pygame.K_d:
 				if main_game.snake.direction.x != -1:
 					main_game.snake.direction = Vector2(1,0)
-			if event.key == pygame.K_DOWN:
+			if event.key == pygame.K_s:
 				if main_game.snake.direction.y != -1:
 					main_game.snake.direction = Vector2(0,1)
-			if event.key == pygame.K_LEFT:
+			if event.key == pygame.K_a:
 				if main_game.snake.direction.x != 1:
 					main_game.snake.direction = Vector2(-1,0)
 
